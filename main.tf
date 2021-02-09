@@ -74,6 +74,7 @@ resource "azurerm_firewall" "azfw" {
   location            = azurerm_resource_group.rg-fw.location
   resource_group_name = azurerm_resource_group.rg-fw.name
   tags                = var.tags
+  depends_on          = [azurerm_resource_group.rg-fw,azurerm_virtual_network.vnet-fw]
 
   ip_configuration {
     name                 = "configuration"

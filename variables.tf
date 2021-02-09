@@ -64,7 +64,7 @@ variable "subnet_prefixes" {
 variable "subnet_names" {
   description = "A list of public subnets inside the vNet."
   type        = list(string)
-  default     = ["subnet_prd", "AzureFirewallSubnet"]
+  default     = ["subnet_prd","AzureFirewallSubnet"]
 }
 
 ##
