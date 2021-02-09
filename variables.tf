@@ -6,7 +6,7 @@ variable "tags" {
 
 variable "location" {
   description = "Location where resources will be deploy"
-  type        = "string"
+  type        = string
 }
 
 
@@ -14,7 +14,7 @@ variable "location" {
 ## rg vars
 variable "rgName" {
   description = "Name of the resourceGroup"
-  type        = "string"
+  type        = string
 }
 
 
