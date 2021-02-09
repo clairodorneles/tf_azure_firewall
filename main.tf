@@ -77,7 +77,7 @@ resource "azurerm_firewall" "azfw" {
 
   ip_configuration {
     name                 = "configuration"
-    subnet_id            = data.azurerm_subnet.subnet.id
+    subnet_id            = data.azurerm_subnet.azfw-subnet.id
     public_ip_address_id = azurerm_public_ip.pip-fw.id
   }
 }
